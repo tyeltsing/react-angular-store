@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Aguacate",
+        "img": "aguacate.jpg",
+        "price": 5,
+        "stock": 68
+    },
+    {
+        "id": 2,
+        "name": "Ajo",
+        "img": "ajo.jpg",
+        "price": 8,
+        "stock": 73
+    },
+    {
+        "id": 3,
+        "name": "Almendras",
+        "img": "almendras.jpg",
+        "price": 7,
+        "stock": 25
+    },
+    {
+        "id": 4,
+        "name": "Arandanos",
+        "img": "arandanos.jpg",
+        "price": 11,
+        "stock": 38
+    },
+    {
+        "id": 5,
+        "name": "Brocoli",
+        "img": "brocoli.png",
+        "price": 9,
+        "stock": 46
+    },
+    {
+        "id": 7,
+        "name": "Maiz",
+        "img": "maiz.jpg",
+        "price": 12,
+        "stock": 60
+    }
+]

@@ -1,0 +1,40 @@
+<br>
+<br>
+<section class="card">
+  <div class="card-body">
+    <div class="row">
+      <article class="col">
+        <h4>{{title}}</h4>
+      </article>
+      <article class="col-4">
+      {{searchInput}}
+      <input type="text" class="form-control" placeholder="Buscar produccto">
+      </article>
+    </div>
+    <hr>
+    <div class="row" >
+      <!-- <card-product class="col col-4" *ngFor="let product of products ">{{product}}</card-product> -->
+      <article class="col col-4" *ngFor="let product of products | filterBy: productFilter">
+        <br>
+          <div class="card" id="{{product.id}}">
+            <img class="card-img-top" src="assets/image/{{product.img}}" alt="Card image cap" style="max-height: 220px;object-fit: contain;">
+            <div class="card-body">
+              <h5 class="card-title">{{product.name | uppercase}}</h5>
+              <p>Precio <b>{{product.price}}</b>$</p>
+              <p><b>{{product.stock}}</b> Unidades disponibles</p>
+              <div class="row">
+                <div class="col-4">
+                  <button type="button" class="btn btn-primary" (click)="showDetails(product.name)" > Ver más</button>
+                </div>
+                <div class="col text-right">
+                  <button type="button" class="btn btn-warning" (click)="addCart(product.name)" > Añadir</button>
+                  <input type="number" class="form-control" value="0" min="0" max="999" style="width:60px;display:inline;">
+                </div>
+              </div>
+            </div>
+          </div>
+        <br>
+      </article>
+    </div>
+  </div>
+</section>

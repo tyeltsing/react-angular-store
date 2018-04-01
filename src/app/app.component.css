@@ -1,0 +1,7 @@
+#pageContent{
+    /*background-image: url('assets/image/main-fondo.jpg');*/
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+}

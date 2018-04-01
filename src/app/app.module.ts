@@ -1,20 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FilterPipeModule } from 'ngx-filter-pipe';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { CatalogComponent } from './catalog/catalog.component';
+import { CardProductComponent } from './card-product/card-product.component';
+import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpService } from './service/http.service';
+import { LogService } from './service/log.service';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    CatalogComponent,
+    CardProductComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    AppRoutingModule,
+    FilterPipeModule,
     HttpModule
   ],
-  providers: [],
+  providers: [LogService, HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
