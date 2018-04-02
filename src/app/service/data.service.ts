@@ -9,17 +9,6 @@ export class DataService {
 
   constructor(private logService: LogService, private httpService : HttpService){ }
 
- 
-
-  newUser(nombre: string){
-    this.products.push(nombre);
-    this.logService.escribirLog('Se añadio el usuario '+ nombre);
-    this.httpService.sendDatos({nombre : nombre})
-      .subscribe(
-        (data : Response) => console.log(data)
-      )
-  }
-
   getProducts(){
    return this.httpService._get('products.json')
       /* .subscribe(

@@ -8,7 +8,7 @@
       </article>
       <article class="col-4">
       {{searchInput}}
-      <input type="text" class="form-control" placeholder="Buscar produccto">
+      <input type="text" class="form-control" #findString (keyup) = "keyDownSearch(findString.value)"  placeholder="Buscar produccto">
       </article>
     </div>
     <hr>
@@ -20,15 +20,16 @@
             <img class="card-img-top" src="assets/image/{{product.img}}" alt="Card image cap" style="max-height: 220px;object-fit: contain;">
             <div class="card-body">
               <h5 class="card-title">{{product.name | uppercase}}</h5>
-              <p>Precio <b>{{product.price}}</b>$</p>
+              <p>Precio <b>{{product.price}}</b> $</p>
               <p><b>{{product.stock}}</b> Unidades disponibles</p>
               <div class="row">
                 <div class="col-4">
-                  <button type="button" class="btn btn-primary" (click)="showDetails(product.name)" > Ver más</button>
+                  <button type="button" class="btn btn-primary" (click)="showDetails(product.id)" > Ver más</button>
                 </div>
                 <div class="col text-right">
-                  <button type="button" class="btn btn-warning" (click)="addCart(product.name)" > Añadir</button>
-                  <input type="number" class="form-control" value="0" min="0" max="999" style="width:60px;display:inline;">
+                  <button type="button" class="btn btn-warning" (click)="addCart(product.id, amount.value)" > Añadir</button>
+                  <input type="number" class="form-control" #amount value="1" min="1" max="{{product.stock}}" style="width:60px;display:inline;">
+                  <!-- <label class="error" *ngIf="!amount.valid">Cantidad Invalida</label> -->
                 </div>
               </div>
             </div>

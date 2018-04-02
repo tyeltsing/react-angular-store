@@ -6,6 +6,7 @@ import 'rxjs/Rx';
 export class HttpService {
   
   API_POINT = './../assets/data/';
+  // API_POINT = 'localhost:8000/';
   
   constructor(private http: Http) { }
   _get(url : string){

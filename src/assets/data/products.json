@@ -35,10 +35,115 @@
         "stock": 46
     },
     {
+        "id": 6,
+        "name": "Calabaza",
+        "img": "calabaza.jpg",
+        "price": 9,
+        "stock": 46
+    },
+    {
         "id": 7,
+        "name": "Canela",
+        "img": "canela.jpg",
+        "price": 25,
+        "stock": 36
+    },
+    {
+        "id": 8,
+        "name": "Cebolla",
+        "img": "cebolla.jpg",
+        "price": 11,
+        "stock": 52
+    },
+    {
+        "id": 9,
+        "name": "Fresa",
+        "img": "fresa.jpg",
+        "price": 17,
+        "stock": 500
+    },
+    {
+        "id": 10,
+        "name": "Kiwi",
+        "img": "kiwi.jpg",
+        "price": 17,
+        "stock": 200
+    },
+    {
+        "id": 11,
+        "name": "Limón",
+        "img": "limon.jpg",
+        "price": 5,
+        "stock": 168
+    },
+    {
+        "id": 12,
+        "name": "Lychee",
+        "img": "lychee.jpg",
+        "price": 6,
+        "stock": 185
+    },
+    {
+        "id": 13,
         "name": "Maiz",
         "img": "maiz.jpg",
         "price": 12,
         "stock": 60
+    },
+    {
+        "id": 14,
+        "name": "Manzana",
+        "img": "manzana.jpg",
+        "price": 24,
+        "stock": 99
+    },
+    {
+        "id": 15,
+        "name": "Naranja",
+        "img": "naranja.jpg",
+        "price": 17,
+        "stock": 200
+    },
+    {
+        "id": 16,
+        "name": "Papa",
+        "img": "papa.jpg",
+        "price": 6,
+        "stock": 22
+    },
+    {
+        "id": 17,
+        "name": "Pasta",
+        "img": "pasta.jpg",
+        "price": 25,
+        "stock": 66
+    },
+    {
+        "id": 18,
+        "name": "Pimienta",
+        "img": "pimienta.jpg",
+        "price": 17,
+        "stock": 200
+    },
+    {
+        "id": 19,
+        "name": "Repollo",
+        "img": "repollo.jpg",
+        "price": 20,
+        "stock": 87
+    },
+    {
+        "id": 20,
+        "name": "Tomate",
+        "img": "tomate.jpg",
+        "price": 15,
+        "stock": 165
+    },
+    {
+        "id": 21,
+        "name": "Zanahoria",
+        "img": "zanahoria.jpg",
+        "price": 22,
+        "stock": 147
     }
 ]
