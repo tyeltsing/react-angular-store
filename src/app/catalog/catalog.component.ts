@@ -45,7 +45,6 @@ export class CatalogComponent implements OnInit {
 		this.dataService.getProducts()
 			.subscribe(
 				(data: Response) => {
-					console.log(data);
 					let aux: any[] = [];
 					for (let key in data) {
 						let exists = data[key].name.toLowerCase().search(regex);

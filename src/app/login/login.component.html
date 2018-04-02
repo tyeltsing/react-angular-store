@@ -1,15 +1,16 @@
 <section class="row justify-content-md-center">
   <div class="col col-lg-2">
-    <form>
+    <form (ngSubmit)="authenticate(f)" #f="ngForm">
       <div class="form-group">
         <label for="exampleFormControlInput1">Correo Electrónico</label>
-        <input type="email" class="form-control" id="email" name="email">
+        <input type="email" class="form-control" [(ngModel)]= "data.email" id="email-input" name="email" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+        <label class="error" *ngIf="!f.valid">Debes ingresar un email válido</label>
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Contraseña</label>
-        <input type="password" class="form-control" id="password" name="password">
+        <input type="password" class="form-control" id="password-input" [(ngModel)]= "data.password" name="password" required>
       </div>
-      <button type="button" class="btn btn-success">Ingresar</button>
+      <button type="submit" class="btn btn-success">Ingresar</button>
     </form>
   </div>
 </section>
