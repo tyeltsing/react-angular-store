@@ -29,6 +29,7 @@ export class CatalogComponent implements OnInit {
 		this.logService.escribirLog("Test : Item " + item)
 		
 	}
+	
 	addCart(item : number, amount : number){
 		alert('addCart '+ item + " => "+ amount )
 	}

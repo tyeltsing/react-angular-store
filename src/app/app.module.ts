@@ -13,6 +13,9 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpService } from './service/http.service';
 import { LogService } from './service/log.service';
+import { CarListComponent } from './car-list/car-list.component';
+import { CartItemComponent } from './car-list/cart-item/cart-item.component';
+import { DetailComponent } from './catalog/detail/detail.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { LogService } from './service/log.service';
     FooterComponent,
     CatalogComponent,
     CardProductComponent,
-    LoginComponent
+    LoginComponent,
+    CarListComponent,
+    CartItemComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

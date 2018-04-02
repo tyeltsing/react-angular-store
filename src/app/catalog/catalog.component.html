@@ -24,7 +24,8 @@
               <p><b>{{product.stock}}</b> Unidades disponibles</p>
               <div class="row">
                 <div class="col-4">
-                  <button type="button" class="btn btn-primary" (click)="showDetails(product.id)" > Ver más</button>
+                  <a routerLink="/detail/{{product.id}}"  class="btn btn-primary"> Ver más</a>
+                  <!-- <button type="button" class="btn btn-primary" (click)="showDetails(product.id)" > Ver más</button> -->
                 </div>
                 <div class="col text-right">
                   <button type="button" class="btn btn-warning" (click)="addCart(product.id, amount.value)" > Añadir</button>
